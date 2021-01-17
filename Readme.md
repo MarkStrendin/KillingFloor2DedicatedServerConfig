@@ -81,8 +81,8 @@ The admin password is required to log into web admin or the admin console in-gam
 The game password is required for players to join the game (so choose something you can share with your friends safely).
 ```
 [Engine.AccessControl]
-AdminPassword=
-GamePassword=
+AdminPassword=mysupersecurepassword
+GamePassword=pizza
 ```
 
 
