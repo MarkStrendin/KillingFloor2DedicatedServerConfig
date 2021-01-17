@@ -70,7 +70,7 @@ You update it the same way you installed it.
 
 # Web admin
 Web Admin is enabled in the `Config/KFWeb.ini` file.
-The username is `administrator`. The password is the admin password, either set in the `PCServer-KFGame.ini` file, or in your `KFServer.bat` file (the bat file overrides the ini file)
+The username is `admin`. The password is the admin password, either set in the `PCServer-KFGame.ini` file, or in your `KFServer.bat` file (the bat file overrides the ini file)
 By default it is configured to run on port 8080. Access it via a web browser on your local network by going to your server's IP address, port 8080, like this: https://10.0.0.104:8080
 
 # Running the dedicated server
