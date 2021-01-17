@@ -50,6 +50,17 @@ Make sure that it can communicate outbound on all of those ports as well, as wel
 
 You _could_ disable your local firewall on your game server, but I don't recommend this for security reasons.
 
+## First time configuration
+
+### config/PCServer-KFGame.ini
+
+Find the following section and change the server name so you can find it
+```
+[Engine.GameReplicationInfo]
+ServerName=Killing Floor 2 Server
+ShortName=KFServer
+```
+
 # Updating KF2 dedicated server
 You update it the same way you installed it.
  1. Run SteamCMD on your server
