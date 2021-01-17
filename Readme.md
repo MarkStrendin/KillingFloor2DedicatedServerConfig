@@ -1,5 +1,18 @@
-# Resources
+# Table of Contents
+- [Resources](#resources)
+- [Ports to forward to your server](#ports-to-forward-to-your-server)
+- [Web admin](#web-admin)
+- [Installing KF2 dedicated server](#installing-kf2-dedicated-server)
+- [Updating KF2 dedicated server](#updating-kf2-dedicated-server)
+- [Running the dedicated server](#running-the-dedicated-server)
+- [Stopping the dedicated server](#stopping-the-dedicated-server)
+- [Tips](#tips)
+- [How to install custom maps from Steam Workshop](#how-to-install-custom-maps-from-steam-workshop)
+  * [Adding custom maps to the map rotation using web admin](#adding-custom-maps-to-the-map-rotation-using-web-admin)
+- [Preventing your server from being used by the Server Takeover feature](#preventing-your-server-from-being-used-by-the-server-takeover-feature)
+- [Changing difficulty in Web Admin](#changing-difficulty-in-web-admin)
 
+# Resources
 The official wiki page for setting up a dedicated server is a great resource:
 https://wiki.killingfloor2.com/index.php?title=Dedicated_Server_(Killing_Floor_2)
 
