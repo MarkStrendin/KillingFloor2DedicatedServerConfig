@@ -76,6 +76,17 @@ ServerName=Killing Floor 2 Server
 ShortName=KFServer
 ```
 
+Set the admin password and optionally set a game password. 
+The admin password is required to log into web admin or the admin console in-game. 
+The game password is required for players to join the game (so choose something you can share with your friends safely).
+```
+[Engine.AccessControl]
+AdminPassword=
+GamePassword=
+```
+
+
+
 # Updating KF2 dedicated server
 You update it the same way you installed it.
  1. Run SteamCMD on your server
