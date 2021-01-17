@@ -44,6 +44,14 @@ If you run this behind a router, you need to forward some ports to your server i
 You probably _shouldn't_ forward the web admin ports outside your network, for security reasons.
 
 # Installing KF2 dedicated server
+
+## Prerequisites
+
+Make sure the following are installed on your server before you start:
+ - Microsoft Visual C++ 2010 Redistributable https://www.microsoft.com/en-us/download/details.aspx?id=5555
+
+## Installing
+
  1. Install SteamCMD on your server - https://developer.valvesoftware.com/wiki/SteamCMD
  2. Logon anonymously using the command `logon anonymous`
  3. Set an install directory appropriate for your server with the command `force_install_dir E:\killingfloor2\`
