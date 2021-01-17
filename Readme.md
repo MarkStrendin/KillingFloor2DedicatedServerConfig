@@ -84,3 +84,15 @@ Now, start your server up, and your maps should show up in the available maps in
  3. Move your custom maps to the right side (or just push `Add Missing`).
  
 __NOTE:__ The map `KF-Default` is not an actual map - it's an internal part of the game that you should ignore. Do not add this map to your map cycle, it will probably crash any player trying to load it.
+
+# Preventing your server from being used by the Server Takeover feature
+The "Server Takeover" feature allows other random people on the internet to essentially take over your server with their own game/maps/password, if nobody is currently using it. If you would rather this not happen to your server, the option to configure this can be found in `PCServer-KFEngine.ini`, under the section `[Engine.GameEngine]`.  The setting is called `bUsedForTakeover=False`. If you do not have this setting, you can add it here. `True` enables the feature, and `False` disables it.
+
+# Changing difficulty in Web Admin
+The server should be sitting at a game lobby when you change this (where it's waiting for people to click ready). It will ignore your change if the server is getting ready to cycle to the next map (after a match, but before the next one has started). 
+
+1. In web admin, go to __Settings__ -> __General__ and select the __Game__ tab. Set the difficulty as appropriate, and click __Save Settings__.
+2. Go to __Change Map__ and change the map so the server reloads. You can change it to the same map as you're on right now. It should be the new difficulty setting when it reloads.
+
+
+
