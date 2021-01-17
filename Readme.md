@@ -11,6 +11,7 @@
   * [Adding custom maps to the map rotation using web admin](#adding-custom-maps-to-the-map-rotation-using-web-admin)
 - [Preventing your server from being used by the Server Takeover feature](#preventing-your-server-from-being-used-by-the-server-takeover-feature)
 - [Changing difficulty in Web Admin](#changing-difficulty-in-web-admin)
+- [Enabling friendly fire](#Enabling-friendly-fire)
 
 # Resources
 The official wiki page for setting up a dedicated server is a great resource:
@@ -113,5 +114,15 @@ The server should be sitting at a game lobby when you change this (where it's wa
 1. In web admin, go to __Settings__ -> __General__ and select the __Game__ tab. Set the difficulty as appropriate, and click __Save Settings__.
 2. Go to __Change Map__ and change the map so the server reloads. You can change it to the same map as you're on right now. It should be the new difficulty setting when it reloads.
 
+# Enabling friendly fire
+
+__NOTE:__ Some guns will behave differently if friendly fire is enabled. Notably, the Medic's _Healthrower_ __will cause damage to teammates__ if friendly fire is enabled, rendering the gun useless on your server.
+
+To enable friendly fire:
+1. Edit `Config/PCServer-KFGame.ini`
+2. Find the `[KFGame.KFGameInfo]` section
+3. Edit `FriendlyFireScale=0.000000` to an appropriate ratio.
+
+This value is a percentage, expressed as a decimal number. `1` is 100%, `0.5` is 50%, `0.05` is 5%, etc.
 
 
