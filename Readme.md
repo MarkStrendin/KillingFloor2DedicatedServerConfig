@@ -34,19 +34,20 @@ If you run this behind a router, you need to forward some ports to your server i
 
 You probably _shouldn't_ forward the web admin ports outside your network, for security reasons.
 
-# Web admin
-The password for this is the admin password, set in the `PCServer-KFGame.ini` file.
-The web admin will write changes to the config files by default.
-By default it is configured to run on port 8080. Access it via a web browser on your local network by going to your server's IP address, port 8080, like this: https://10.0.0.104:8080
-
 # Installing KF2 dedicated server
  1. Install SteamCMD on your server - https://developer.valvesoftware.com/wiki/SteamCMD
  2. Logon anonymously using the command `logon anonymous`
  3. Set an install directory appropriate for your server with the command `force_install_dir E:\killingfloor2\`
  4. Install the dedicated server using the command `app_update 232130 validate`. This will take a while, depending on your internet connection.
+ 5. Create a custom "server start" batch file which won't get overwritten every time the server updates. This can be as easy as copying "KF2Server.bat" and naming it something else. An example file is included in this repo.
+ 6. Launch the game once, so it creates the necesary config files. 
+ 7. Give it a minute or two and then close the game by pressing __CTRL+C__ on the server console.
+ 8. In the `/Config/KFWeb.ini` file, find the `bEnabled=false` line and change this to `bEnabled=true`.
 
 On your server, make sure the above ports are allowed through your firewall, in addition to the web admin port `8080`. 
 Make sure that it can communicate outbound on all of those ports as well, as well as port `123` for network time (for weekly outbreaks). Most systems allow outbound traffic by default, so you may not need to worry about this.
+
+You _could_ disable your local firewall on your game server, but I don't recommend this for security reasons.
 
 # Updating KF2 dedicated server
 You update it the same way you installed it.
@@ -54,7 +55,12 @@ You update it the same way you installed it.
  2. Logon anonymously using the command `logon anonymous`
  3. It won't remember where it's installed, so tell it where you've installed it using the command `force_install_dir E:\killingfloor2\`
  4. Update using the command `app_update 232130 validate`. This will take a while, depending on your internet connection.
- 
+
+# Web admin
+Web Admin is enabled in the `Config/KFWeb.ini` file.
+The username is `administrator`. The password is the admin password, either set in the `PCServer-KFGame.ini` file, or in your `KFServer.bat` file (the bat file overrides the ini file)
+By default it is configured to run on port 8080. Access it via a web browser on your local network by going to your server's IP address, port 8080, like this: https://10.0.0.104:8080
+
 # Running the dedicated server
 Double click the batch file `KF2Server.bat`, or ideally make your own (as I've done in this repo) and run that instead. Mine is called `StartServer.bat`.
 
