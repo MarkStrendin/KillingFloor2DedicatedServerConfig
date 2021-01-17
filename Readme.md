@@ -87,7 +87,8 @@ Double click the batch file `KF2Server.bat`, or ideally make your own (as I've d
 Click the server console and push __CTRL+C__, and it will shut it down.
 
 # Tips
-* When the server is updated, it will overwrite the `KF2Server.bat` file, and may overwrite your admin password. Make a seperate batch file to start the server with with either your own password or no password (it will default to the one in the config file `PCServer-KFGame.ini`).
+- When the server is updated, it will overwrite the `KF2Server.bat` file, and may overwrite your admin password. Make a seperate batch file to start the server with with either your own password or no password (it will default to the one in the config file `PCServer-KFGame.ini`).
+- Always edit config files while the Killing Floor 2 dedicated server prorgam is __not__ running. It will override your files if it is running, and you'll have to make your edits again.
 
 # How to install custom maps from Steam Workshop
 
