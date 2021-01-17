@@ -13,6 +13,11 @@
 - [Changing difficulty in Web Admin](#changing-difficulty-in-web-admin)
 - [Enabling friendly fire](#Enabling-friendly-fire)
 
+# What is this?
+
+This is my notes for setting up a Killing Floor 2 dedicated server ona dedicated computer or virtual machine.
+Copies of my config files are included in this repo for reference, but you do not need to use them if you configure your own.
+
 # Resources
 The official wiki page for setting up a dedicated server is a great resource:
 https://wiki.killingfloor2.com/index.php?title=Dedicated_Server_(Killing_Floor_2)
@@ -40,15 +45,14 @@ You probably _shouldn't_ forward the web admin ports outside your network, for s
  2. Logon anonymously using the command `logon anonymous`
  3. Set an install directory appropriate for your server with the command `force_install_dir E:\killingfloor2\`
  4. Install the dedicated server using the command `app_update 232130 validate`. This will take a while, depending on your internet connection.
- 5. Create a custom "server start" batch file which won't get overwritten every time the server updates. This can be as easy as copying "KF2Server.bat" and naming it something else. An example file is included in this repo.
+ 5. Create a custom "server start" batch file. The one that's included will be overwritten when the game updates, which will also reset your admin password to the default, overriding the one in your config file. Create your own batch file, named something different, with no password in it, and use that to start the server. An example file can be found in this repo here: [StartServer.bat](StartServer.bat)
  6. Launch the game once, so it creates the necesary config files. 
  7. Give it a minute or two and then close the game by pressing __CTRL+C__ on the server console.
  8. In the `/Config/KFWeb.ini` file, find the `bEnabled=false` line and change this to `bEnabled=true`.
+ 9. In the folder you installed the game in, go into the `KFGame` folder, and create a new folder named `Cache`. It does not do this automatically as of the time of this writing, and this is required for custom maps to work.
 
 On your server, make sure the above ports are allowed through your firewall, in addition to the web admin port `8080`. 
 Make sure that it can communicate outbound on all of those ports as well, as well as port `123` for network time (for weekly outbreaks). Most systems allow outbound traffic by default, so you may not need to worry about this.
-
-You _could_ disable your local firewall on your game server, but I don't recommend this for security reasons.
 
 ## First time configuration
 
