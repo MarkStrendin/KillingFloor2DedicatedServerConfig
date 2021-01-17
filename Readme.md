@@ -1,9 +1,11 @@
-# Table of Contents
+- [What is this?](#what-is-this-)
 - [Resources](#resources)
 - [Ports to forward to your server](#ports-to-forward-to-your-server)
-- [Web admin](#web-admin)
 - [Installing KF2 dedicated server](#installing-kf2-dedicated-server)
+  * [First time configuration](#first-time-configuration)
+    + [config/PCServer-KFGame.ini](#config-pcserver-kfgameini)
 - [Updating KF2 dedicated server](#updating-kf2-dedicated-server)
+- [Web admin](#web-admin)
 - [Running the dedicated server](#running-the-dedicated-server)
 - [Stopping the dedicated server](#stopping-the-dedicated-server)
 - [Tips](#tips)
@@ -11,7 +13,8 @@
   * [Adding custom maps to the map rotation using web admin](#adding-custom-maps-to-the-map-rotation-using-web-admin)
 - [Preventing your server from being used by the Server Takeover feature](#preventing-your-server-from-being-used-by-the-server-takeover-feature)
 - [Changing difficulty in Web Admin](#changing-difficulty-in-web-admin)
-- [Enabling friendly fire](#Enabling-friendly-fire)
+- [Enabling friendly fire](#enabling-friendly-fire)
+
 
 # What is this?
 
